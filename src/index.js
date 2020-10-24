@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import PatchEvent, { set, unset } from 'part:@sanity/form-builder/patch-event'
 import DefaultLabel from '@sanity/components/lib/labels/DefaultLabel'
 
