@@ -8,6 +8,16 @@ import StarFilled from './svg/starFilled.svg'
 const createPatchFrom = value =>
   PatchEvent.from(value === '' ? unset() : set(Number(value)))
 
+const makeIterable = end => {
+  const range = []
+
+  for (let i = 0; i < end; i++) {
+    range.push(i + 1)
+  }
+
+  return range
+}
+
 const RadioButton = ({ item, selected, value }) => (
   <>
     <input
@@ -30,6 +40,9 @@ const RadioButton = ({ item, selected, value }) => (
 )
 
 const RatingInput = ({ type, value, onChange }) => {
+  const end = type.options.stars || 5
+  const stars = makeIterable(end)
+
   const handleChange = evt => {
     const val = evt.target.value
     onChange(createPatchFrom(val))
@@ -44,7 +57,7 @@ const RatingInput = ({ type, value, onChange }) => {
         </p>
       )}
       <div onChange={handleChange}>
-        {[1, 2, 3, 4, 5].map(item => (
+        {stars.map(item => (
           <RadioButton item={item} selected={value === item} value={value} />
         ))}
       </div>

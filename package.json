@@ -5,7 +5,7 @@
   "description": "A Sanity.io star rating input component.",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sanity-io/plugin-template-tool.git"
+    "url": "git+https://github.com/colettewilson/simpleStarRating"
   },
   "keywords": [
     "sanity",
@@ -18,9 +18,9 @@
   "author": "Colette Wilson Wyatt <hello@colette.dev>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/sanity-io/plugin-template-tool/issues"
+    "url": "https://github.com/colettewilson/simpleStarRating/issues"
   },
-  "homepage": "https://github.com/sanity-io/plugin-template-tool#readme",
+  "homepage": "https://github.com/colettewilson/simpleStarRating#readme",
   "peerDependencies": {
     "@sanity/form-builder": "^0.144.0",
     "@sanity/components": "^0.144.0",
