@@ -5,7 +5,7 @@
   "description": "A Sanity.io star rating input component.",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/colettewilson/simpleStarRating"
+    "url": "git+https://github.com/colettewilson/simpleStarRating.git"
   },
   "keywords": [
     "sanity",
@@ -31,5 +31,10 @@
     "babel-cli": "6.26.0",
     "babel-preset-es2015": "6.24.1",
     "babel-preset-react": "6.24.1"
+  },
+  "main": "index.js",
+  "scripts": {
+    "build": "babel src -d lib --copy-files",
+    "test": "echo \"Error: no test specified\" && exit 1"
   }
 }
