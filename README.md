@@ -1,8 +1,12 @@
-## Installation
+## Simple Star Rating
+
+A Sanity.io custom input component that allows you to provide a star rating.
+
+### Installation
 
 1. `sanity install simple-star-rating`
 
-## Usage
+### Usage
 
 ```js
 {
@@ -16,7 +20,7 @@
 },
 ```
 
-## Preview
+### Preview
 
 ![Simple star rating input preview](https://github.com/colettewilson/simpleStarRating/blob/main/src/images/preview.png)
 
