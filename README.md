@@ -1,6 +1,8 @@
 ## Installation
-1. sanity install simple-star-rating
-2. Example usage:
+
+1. `sanity install simple-star-rating`
+
+## Usage
 
 ```js
 {
@@ -13,6 +15,8 @@
   }
 },
 ```
+
+## Preview
 
 ![Simple star rating input preview](https://github.com/colettewilson/simpleStarRating/blob/main/src/images/preview.png)
 
