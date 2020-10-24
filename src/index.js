@@ -19,7 +19,7 @@ const makeIterable = end => {
 }
 
 const RadioButton = ({ item, selected, value }) => (
-  <>
+  <label htmlFor={item} style={{ marginRight: `0.25rem` }}>
     <input
       type="radio"
       id={item}
@@ -33,10 +33,8 @@ const RadioButton = ({ item, selected, value }) => (
       }}
       selected={selected}
     />
-    <label htmlFor={item} style={{ marginRight: `0.25rem` }}>
-      {value >= item ? <StarFilled /> : <Star />}
-    </label>
-  </>
+    {value >= item ? <StarFilled /> : <Star />}
+  </label>
 )
 
 const RatingInput = ({ type, value, onChange }) => {
@@ -49,7 +47,7 @@ const RatingInput = ({ type, value, onChange }) => {
   }
 
   return (
-    <>
+    <div>
       <DefaultLabel>{type.title}</DefaultLabel>
       {type.description && (
         <p style={{ marginTop: `0.25rem`, fontSize: `0.8125rem` }}>
@@ -61,7 +59,7 @@ const RatingInput = ({ type, value, onChange }) => {
           <RadioButton item={item} selected={value === item} value={value} />
         ))}
       </div>
-    </>
+    </div>
   )
 }
 
