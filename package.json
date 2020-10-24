@@ -1,7 +1,7 @@
 {
   "name": "sanity-plugin-simple-star-rating",
   "private": false,
-  "version": "1.0.9",
+  "version": "1.1.0",
   "description": "A Sanity.io star rating input component.",
   "repository": {
     "type": "git",
@@ -21,10 +21,6 @@
     "url": "https://github.com/colettewilson/simpleStarRating/issues"
   },
   "homepage": "https://github.com/colettewilson/simpleStarRating#readme",
-  "peerDependencies": {
-    "@sanity/components": "^0.144.0",
-    "@sanity/form-builder": "^0.144.0"
-  },
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
@@ -35,5 +31,11 @@
   "scripts": {
     "build": "babel src -d lib --copy-files",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "peerDependencies": {
+    "@sanity/components": "^0.144.0",
+    "@sanity/form-builder": "^0.144.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.12.0"
   }
 }

@@ -1,5 +1,4 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import PatchEvent, { set, unset } from 'part:@sanity/form-builder/patch-event'
 import DefaultLabel from '@sanity/components/lib/labels/DefaultLabel'
 
@@ -62,18 +61,6 @@ const RatingInput = ({ type, value, onChange }) => {
       </div>
     </div>
   )
-}
-
-RatingInput.propTypes = {
-  type: PropTypes.shape({
-    title: PropTypes.string,
-    description: PropTypes.string,
-    options: PropTypes.shape({
-      stars: PropTypes.number,
-    }).isRequired
-  }).isRequired,
-  value: PropTypes.string,
-  onChange: PropTypes.func.isRequired
 }
 
 export default RatingInput
