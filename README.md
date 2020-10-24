@@ -12,6 +12,5 @@
   }
 },```
 
-Inline-style: 
-![Simple star rating input preview](src/images/preview.png "Simple Star Rating input")
+![Simple star rating input preview](https://github.com/colettewilson/simpleStarRating/blob/main/src/images/preview.png)
 
