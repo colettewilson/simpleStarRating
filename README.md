@@ -9,7 +9,7 @@
   title: "Rating",
   name: "rating",
   type: "simpleStarRating", // Required
-  description: "Apply a rating out of 5 stars"
+  description: "Apply a rating out of 5 stars",
   options: {
     stars: 5, // Optional. Default 5.
   }
