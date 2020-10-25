@@ -12,7 +12,7 @@ A Sanity.io custom input component that allows you to provide a star rating.
 {
   title: "Rating",
   name: "rating",
-  type: "simpleStarRating", // Required
+  type: "rating", // Required
   description: "Apply a rating out of 5 stars",
   options: {
     stars: 5, // Optional. Default 5.
