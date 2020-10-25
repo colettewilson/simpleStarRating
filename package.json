@@ -1,7 +1,7 @@
 {
   "name": "sanity-plugin-simple-star-rating",
   "private": false,
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "A Sanity.io star rating input component.",
   "repository": {
     "type": "git",

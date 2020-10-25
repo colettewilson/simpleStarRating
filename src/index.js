@@ -37,7 +37,7 @@ const RadioButton = ({ item, selected, value }) => (
 
 const RatingInput = ({ type, value, onChange }) => {
   const { title, description, options } = type
-  const end = options ? parseFloat(options.stars) : 5
+  const end = options && options.stars ? parseFloat(options.stars) : 5
   const stars = makeIterable(end)
 
   const handleChange = evt => {
