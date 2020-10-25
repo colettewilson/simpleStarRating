@@ -1,9 +1,7 @@
 import React from 'react'
+import { FaStar, FaRegStar } from 'react-icons/fa'
 import PatchEvent, { set, unset } from 'part:@sanity/form-builder/patch-event'
 import DefaultLabel from '@sanity/components/lib/labels/DefaultLabel'
-
-import Star from './svg/star.svg'
-import StarFilled from './svg/starFilled.svg'
 
 const createPatchFrom = value =>
   PatchEvent.from(value === '' ? unset() : set(Number(value)))
@@ -33,12 +31,13 @@ const RadioButton = ({ item, selected, value }) => (
       }}
       selected={selected}
     />
-    {value >= item ? <StarFilled /> : <Star />}
+    {value >= item ? <FaStar /> : <FaRegStar />}
   </label>
 )
 
 const RatingInput = ({ type, value, onChange }) => {
-  const end = type.options.stars || 5
+  const { title, description, options } = type
+  const end = options ? parseFloat(options.stars) : 5
   const stars = makeIterable(end)
 
   const handleChange = evt => {
@@ -48,10 +47,10 @@ const RatingInput = ({ type, value, onChange }) => {
 
   return (
     <div>
-      <DefaultLabel>{type.title}</DefaultLabel>
-      {type.description && (
+      <DefaultLabel>{title}</DefaultLabel>
+      {description && (
         <p style={{ marginTop: `0.25rem`, fontSize: `0.8125rem` }}>
-          {type.description}
+          {description}
         </p>
       )}
       <div onChange={handleChange}>

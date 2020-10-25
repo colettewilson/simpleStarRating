@@ -37,5 +37,8 @@
     "@sanity/form-builder": "^0.144.0",
     "prop-types": "^15.7.2",
     "react": "^16.12.0"
+  },
+  "dependencies": {
+    "react-icons": "^3.11.0"
   }
 }
