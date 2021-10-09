@@ -1,7 +1,7 @@
 import React from 'react'
 import { FaStar, FaRegStar } from 'react-icons/fa'
 import PatchEvent, { set, unset } from 'part:@sanity/form-builder/patch-event'
-import DefaultLabel from '@sanity/base/lib/__legacy/@sanity/components/lib/labels/DefaultLabel'
+import DefaultLabel from '@sanity/base/lib/__legacy/@sanity/components/labels/DefaultLabel'
 
 const createPatchFrom = value =>
   PatchEvent.from(value === '' ? unset() : set(Number(value)))
