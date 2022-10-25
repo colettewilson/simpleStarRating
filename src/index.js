@@ -20,7 +20,7 @@ const RadioButton = ({ item, selected, value }) => (
   <label htmlFor={item} style={{ marginRight: `0.25rem` }}>
     <input
       type="radio"
-      id={item}
+      id={`star-${item}`}
       name="rating"
       value={item}
       style={{
