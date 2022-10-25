@@ -17,7 +17,7 @@ const makeIterable = end => {
 }
 
 const RadioButton = ({ item, selected, value }) => (
-  <label htmlFor={item} style={{ marginRight: `0.25rem` }}>
+  <label htmlFor={`star-${item}`} style={{ marginRight: `0.25rem` }}>
     <input
       type="radio"
       id={`star-${item}`}
@@ -28,6 +28,7 @@ const RadioButton = ({ item, selected, value }) => (
         top: `-9999px`,
         width: `1px`,
         height: `1px`,
+        cursor: 'pointer'
       }}
       selected={selected}
     />
